@@ -52,9 +52,9 @@ public class enemy : MonoBehaviour {
         } else if (other.gameObject.CompareTag("tag")){
             Destroy(other.gameObject);
             Destroy(gameObject);
-
+          
         }
-
+        
     }
 
 }

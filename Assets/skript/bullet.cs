@@ -16,7 +16,7 @@ public class bullet : MonoBehaviour {
     private void Start (){
         rb = GetComponent<Rigidbody2D>();
         Destroy(gameObject, lifeTime);
-
+        
     }
     private void FixedUpdate(){
         rb.velocity = transform.up * speed;
