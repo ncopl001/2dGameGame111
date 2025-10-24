@@ -44,17 +44,35 @@ public class enemy : MonoBehaviour {
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D other){
+    /*private void OnCollisionEnter2D(Collision2D other){
         if (other.gameObject.CompareTag("Player")){
-            Destroy(other.gameObject);
+           Destroy(other.gameObject);
             target = null;
             SceneManager.LoadScene("DeathScreen");
         } else if (other.gameObject.CompareTag("tag")){
-            Destroy(other.gameObject);
+           Destroy(other.gameObject);
             Destroy(gameObject);
 
         }
 
+    }*/
+
+private void OnTriggerEnter2D(Collider2D collision)
+{
+    if (collision.gameObject.CompareTag("Player"))
+    {
+        // Get the PlayerHealth script and apply damage
+        PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
+        if (playerHealth != null)
+        {
+            playerHealth.TakeDamage();
+        }
     }
+   else if (collision.gameObject.CompareTag("bullet"))
+    {
+        Destroy(collision.gameObject);
+        Destroy(gameObject);
+    }
+}
 
 }
