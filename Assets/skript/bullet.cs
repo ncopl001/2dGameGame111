@@ -21,4 +21,11 @@ public class bullet : MonoBehaviour {
     private void FixedUpdate(){
         rb.velocity = transform.up * speed;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Destroy the bullet on impact with ANYTHING
+        Destroy(gameObject);
+    }
+
 }
