@@ -71,7 +71,12 @@ private void OnTriggerEnter2D(Collider2D collision)
    else if (collision.gameObject.CompareTag("bullet"))
     {
         Destroy(collision.gameObject);
-        Destroy(gameObject);
+         if (GameManager.Instance != null)
+    {
+        GameManager.Instance.AddScore(10); // you can pick any value, e.g., 100 points
+    }
+
+    Destroy(gameObject);
     }
 }
 
