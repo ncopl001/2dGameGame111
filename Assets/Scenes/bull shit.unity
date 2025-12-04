@@ -134,6 +134,10 @@ PrefabInstance:
       value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1989144861668408501, guid: cffae48797dd2894aa18f65a108d8ab9, type: 3}
+      propertyPath: difficultyIncrease
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989144861668408501, guid: cffae48797dd2894aa18f65a108d8ab9, type: 3}
       propertyPath: enemyPrefabs.Array.size
       value: 5
       objectReference: {fileID: 0}
@@ -769,13 +773,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 531529321}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 10.2, y: 33.9, z: 0}
   m_LocalScale: {x: 80.46982, y: 0.9482151, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 1527380821}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &734789932
 GameObject:
@@ -1337,7 +1341,7 @@ Transform:
   m_Children:
   - {fileID: 1005147230}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1077470345
 GameObject:
@@ -1457,6 +1461,10 @@ PrefabInstance:
       value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1989144861668408501, guid: cffae48797dd2894aa18f65a108d8ab9, type: 3}
+      propertyPath: difficultyIncrease
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989144861668408501, guid: cffae48797dd2894aa18f65a108d8ab9, type: 3}
       propertyPath: enemyPrefabs.Array.size
       value: 5
       objectReference: {fileID: 0}
@@ -1538,6 +1546,10 @@ PrefabInstance:
       value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1989144861668408501, guid: cffae48797dd2894aa18f65a108d8ab9, type: 3}
+      propertyPath: difficultyIncrease
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989144861668408501, guid: cffae48797dd2894aa18f65a108d8ab9, type: 3}
       propertyPath: enemyPrefabs.Array.size
       value: 5
       objectReference: {fileID: 0}
@@ -1563,7 +1575,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9023383670677178499, guid: cffae48797dd2894aa18f65a108d8ab9, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9023383670677178499, guid: cffae48797dd2894aa18f65a108d8ab9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1914,6 +1926,7 @@ Transform:
   - {fileID: 420376120}
   - {fileID: 916893123}
   - {fileID: 1739268674}
+  - {fileID: 531529324}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2164,7 +2177,7 @@ Transform:
   m_Children:
   - {fileID: 734789933}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &1859050203
 CircleCollider2D:
